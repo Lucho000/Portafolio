@@ -1,0 +1,22 @@
+@keyframes saludo{
+    0%{
+        transform: rotateZ(-45deg);
+    }
+    25%{
+        transform: rotateZ(0deg);
+    }
+    50%{
+        transform: rotateZ(-100deg);
+    }
+    100%{
+        transform: rotateZ(0deg);
+    }
+}
+@keyframes perfil{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.1);
+    }
+}
