@@ -74,7 +74,7 @@ body::-webkit-scrollbar-thumb{
     transition: all.30s;
 }
 #navDeSecciones #toggle{
-    cursor: default;
+    cursor: pointer;
     width: 3vw;
     height: 1.5vw;
     padding: 2px;
@@ -193,12 +193,17 @@ header #tarjetaPresentacion cite{
 .seccion{
     padding: 5% 15%;
     height: 37vw;
+    width: 100%;
 }
 /*SOBRE MÍ*/
 #sobreMi{
-    width: 100%;
     color: var(--color3);
     background-color: var(--color1);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
 }
 #sobreMi h2{
     height: 20%;
@@ -219,32 +224,55 @@ header #tarjetaPresentacion cite{
     background-color: var(--color2);
     animation: saludo 1s 1s infinite forwards alternate;
 }
-#datosAboutMe{
-    height: 60%;
 
-}
 #sobreMi #datosPersonales{
-    width: 100px;
-    height: 50%;
+    width: 50%;
+    height: 60%;
     font-size: 1vw;
-    display: inline;
 }
-#sobreMi #intereses{
-    width: 40%;
-    height: 50%;
-    font-size: 1vw;
+#sobreMi #datosPersonales h3{
+    width: 100%;
+    height: 20%;
+    text-align: center;
+}
+#sobreMi #datosPersonales ul{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: stretch;
+}
+#sobreMi #datosPersonales ul li{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    float: right;
+}
+#sobreMi #intereses{
+    width: 50%;
+    height: 60%;
+    font-size: 1vw;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+#sobreMi #intereses h3{
+    width: 100%;
+    text-align: center;
 }
 #sobreMi #intereses div{
+    display: inline-block;
     cursor: default;
-    width: 7vw;
-    height: 7vw;
+    width: 6vw;
+    height: 6vw;
     padding: 5px;
+    margin: 0.5vw 1.5vw;
     border-radius: 10px;
     background-color: var(--color4);
     text-align: center;
@@ -254,7 +282,12 @@ header #tarjetaPresentacion cite{
     background-color: var(--color2);
     transition: all.20s;
 }
+#sobreMi #intereses div img{
+    width: 60%;
+    height: 60%;
+}
 p i, body strong{
+    cursor: default;
     color: var(--color2);
 }
 ul{
@@ -262,27 +295,21 @@ ul{
 }
 /*HABILIDADES*/
 #habilidades{
-    width: 100%;
-    height: 35vw;
     background-color: var(--color4);
 }
 /*EDUCACIÓN*/
 #educacion{
-    width: 100%;
     background-color: var(--color1);
 }
 /*EXPERIENCIA*/
 #experiencia{
-    width: 100%;
     background-color: var(--color4);
 }
 /*PROYECTOS*/
 #proyectos{
-    width: 100%;
     background-color: var(--color1);
 }
 /*CONTACTO*/
 #contacto{
-    width: 100%;
     background-color: var(--color4);
 }
