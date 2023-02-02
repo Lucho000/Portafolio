@@ -16,6 +16,7 @@
 html{
     scroll-behavior: smooth;
     font-family: 'Unbounded';
+    cursor: url('img/cursor.png'), auto;
 }
 body::-webkit-scrollbar{
     width: 8px;
@@ -30,7 +31,7 @@ body::-webkit-scrollbar-thumb{
 }
 /*BARRA DE NAVEGACION*/
 #navPrincipal{
-    z-index: 3;
+    z-index: 5;
     position: fixed;
     width: 100%;
     height: 4vw;
@@ -42,6 +43,7 @@ body::-webkit-scrollbar-thumb{
     align-items: center;
 }
 #navPrincipal a{
+    cursor: url('img/cursorClick.png');
     text-decoration: none;
     color: var(--color2);
     font-size: 2.5vw;
@@ -74,7 +76,7 @@ body::-webkit-scrollbar-thumb{
     transition: all.30s;
 }
 #navDeSecciones #toggle{
-    cursor: pointer;
+    cursor: url('img/cursorClick.png');
     width: 3vw;
     height: 1.5vw;
     padding: 2px;
@@ -95,10 +97,10 @@ body::-webkit-scrollbar-thumb{
 }
 #idiomas{
     padding: 1vw;
-    cursor: default;
+    cursor: url('img/cursor.png'), auto;
 }
 #idiomas button{
-    cursor: pointer;
+    cursor: url('img/cursorClick.png');
     width: 1.5vw;
     height: 1.5vw;
     border: none;
@@ -158,12 +160,12 @@ header #tarjetaPresentacion > img{
     animation: perfil 2s 1s infinite alternate;
 }
 header #tarjetaPresentacion h1{
-    cursor: default;
+    cursor: url('img/cursor.png'), auto;
     font-size: 2vw;
     text-align: center;
 }
 header #tarjetaPresentacion cite{
-    cursor: default;
+    cursor: url('img/cursor.png'), auto;
     font-size: 1vw;
     text-align: center;
 }
@@ -195,6 +197,14 @@ header #tarjetaPresentacion cite{
     height: 37vw;
     width: 100%;
 }
+.seccion h2{
+    cursor: url('img/cursor.png'), auto;
+    width: 100%;
+    height: 20%;
+    text-align: center;
+    color: var(--color3);
+    font-size: 2.5vw;
+}
 /*SOBRE MÍ*/
 #sobreMi{
     color: var(--color3);
@@ -204,11 +214,6 @@ header #tarjetaPresentacion cite{
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
-}
-#sobreMi h2{
-    height: 20%;
-    text-align: center;
-    font-size: 2.5vw;
 }
 #sobreMi p{
     height: 20%;
@@ -268,7 +273,7 @@ header #tarjetaPresentacion cite{
 }
 #sobreMi #intereses div{
     display: inline-block;
-    cursor: default;
+    cursor: url('img/cursor.png'), auto;
     width: 6vw;
     height: 6vw;
     padding: 5px;
@@ -287,26 +292,137 @@ header #tarjetaPresentacion cite{
     height: 60%;
 }
 p i, body strong{
-    cursor: default;
+    cursor: url('img/cursor.png'), auto;
     color: var(--color2);
 }
 ul{
     list-style: none;
 }
+/*PROYECTOS*/
+#proyectos{
+    background-color: var(--color4); 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+#proyectos .proyectos{
+    z-index: 3;
+    cursor: url('img/cursorClick.png');
+    width: 11vw;
+    height: 11vw;
+    color: var(--color4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.8;
+    transition: all.20s;
+}
+#proyectos .proyectos:hover{
+    z-index: 4;
+    opacity: 1;
+    outline: 1px solid var(--color2);
+    color: var(--color2);
+    transform: scale(1.5);
+    transition: all.20s;
+}
+#proyectos .proyectos:active{
+    border-radius: 10px;
+}
+#proyectos #proyecto1{
+    background-image: url('img/p1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#proyectos #proyecto2{
+    background-image: url('img/p2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#proyectos #proyecto3{
+    background-image: url('img/p3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#proyectos #proyecto4{
+    background-image: url('img/p4.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#proyectos #proyecto5{
+    background-image: url('img/p5.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#proyectos #proyecto6{
+    background-image: url('img/p6.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 /*HABILIDADES*/
 #habilidades{
-    background-color: var(--color4);
+    background-color: var(--color1);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    overflow: hidden;
+    user-select: none;
+    position: relative;
+}
+#habilidades #puntero{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: var(--color6);
+}
+#habilidades .tecnologias{
+    width: 3vw;
+    height: 3vw;
+    text-align: center;
+    color: var(--color2);
+    font-weight: 900;
+}
+#habilidades #js{
+    animation: tecnologias1 3s alternate infinite;
+}
+#habilidades #html{
+    animation: tecnologias2 5s alternate-reverse infinite;
+}
+#habilidades #css{
+    animation: tecnologias3 3s alternate infinite;
+}
+#habilidades #json{
+    animation: tecnologias4 5s alternate infinite;
+}
+#habilidades #ts{
+    animation: tecnologias3 3s alternate-reverse infinite;
+}
+#habilidades #bootstrap{
+    animation: tecnologias1 7s alternate-reverse infinite;
+}
+#habilidades #git{
+    animation: tecnologias2 7s alternate infinite;
+}
+#habilidades .tecnologias img{
+    width: 100%;
+    height: 100%;
+}
+#habilidades .tecnologias p{
+    cursor: url('img/cursor.png'), auto;
 }
 /*EDUCACIÓN*/
 #educacion{
-    background-color: var(--color1);
+    background-color: var(--color4);
 }
 /*EXPERIENCIA*/
 #experiencia{
-    background-color: var(--color4);
-}
-/*PROYECTOS*/
-#proyectos{
     background-color: var(--color1);
 }
 /*CONTACTO*/
