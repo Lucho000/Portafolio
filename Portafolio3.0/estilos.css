@@ -16,7 +16,6 @@
 html{
     scroll-behavior: smooth;
     font-family: 'Unbounded';
-    cursor: url('img/cursor.png'), auto;
 }
 body::-webkit-scrollbar{
     width: 8px;
@@ -43,7 +42,7 @@ body::-webkit-scrollbar-thumb{
     align-items: center;
 }
 #navPrincipal a{
-    cursor: url('img/cursorClick.png');
+    cursor: pointer;
     text-decoration: none;
     color: var(--color2);
     font-size: 2.5vw;
@@ -76,7 +75,7 @@ body::-webkit-scrollbar-thumb{
     transition: all.30s;
 }
 #navDeSecciones #toggle{
-    cursor: url('img/cursorClick.png');
+    cursor: pointer;
     width: 3vw;
     height: 1.5vw;
     padding: 2px;
@@ -97,10 +96,10 @@ body::-webkit-scrollbar-thumb{
 }
 #idiomas{
     padding: 1vw;
-    cursor: url('img/cursor.png'), auto;
+    cursor: default;
 }
 #idiomas button{
-    cursor: url('img/cursorClick.png');
+    cursor: pointer;
     width: 1.5vw;
     height: 1.5vw;
     border: none;
@@ -160,12 +159,12 @@ header #tarjetaPresentacion > img{
     animation: perfil 2s 1s infinite alternate;
 }
 header #tarjetaPresentacion h1{
-    cursor: url('img/cursor.png'), auto;
+    cursor: default;
     font-size: 2vw;
     text-align: center;
 }
 header #tarjetaPresentacion cite{
-    cursor: url('img/cursor.png'), auto;
+    cursor: default;
     font-size: 1vw;
     text-align: center;
 }
@@ -198,7 +197,7 @@ header #tarjetaPresentacion cite{
     width: 100%;
 }
 .seccion h2{
-    cursor: url('img/cursor.png'), auto;
+    cursor: default;
     width: 100%;
     height: 20%;
     text-align: center;
@@ -273,7 +272,7 @@ header #tarjetaPresentacion cite{
 }
 #sobreMi #intereses div{
     display: inline-block;
-    cursor: url('img/cursor.png'), auto;
+    cursor: default;
     width: 6vw;
     height: 6vw;
     padding: 5px;
@@ -292,7 +291,7 @@ header #tarjetaPresentacion cite{
     height: 60%;
 }
 p i, body strong{
-    cursor: url('img/cursor.png'), auto;
+    cursor: default;
     color: var(--color2);
 }
 ul{
@@ -310,7 +309,7 @@ ul{
 }
 #proyectos .proyectos{
     z-index: 3;
-    cursor: url('img/cursorClick.png');
+    cursor: pointer;
     width: 11vw;
     height: 11vw;
     color: var(--color4);
@@ -374,14 +373,6 @@ ul{
     user-select: none;
     position: relative;
 }
-#habilidades #puntero{
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    background-color: var(--color6);
-}
 #habilidades .tecnologias{
     width: 3vw;
     height: 3vw;
@@ -415,7 +406,7 @@ ul{
     height: 100%;
 }
 #habilidades .tecnologias p{
-    cursor: url('img/cursor.png'), auto;
+    cursor: default;
 }
 /*EDUCACIÓN*/
 #educacion{
