@@ -364,49 +364,102 @@ ul{
 #habilidades{
     background-color: var(--color1);
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+}
+#habilidades #profesionales, #habilidades #blandas{
+    width: 44%;
+    height: 80%;
+    margin-right: 3%;
+    display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
-    gap: 5px;
-    overflow: hidden;
-    user-select: none;
-    position: relative;
+    gap: 6px;
 }
-#habilidades .tecnologias{
-    width: 3vw;
+#habilidades #blandas{
+    margin-left: 3%;
+}
+.tecnologias{
+    width: 100%;
     height: 3vw;
-    text-align: center;
     color: var(--color2);
-    font-weight: 900;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
+/*
 #habilidades #js{
-    animation: tecnologias1 3s alternate infinite;
+    animation:  3s alternate infinite;
 }
 #habilidades #html{
-    animation: tecnologias2 5s alternate-reverse infinite;
+    animation:  5s alternate-reverse infinite;
 }
 #habilidades #css{
-    animation: tecnologias3 3s alternate infinite;
+    animation:  3s alternate infinite;
 }
 #habilidades #json{
-    animation: tecnologias4 5s alternate infinite;
+    animation:  5s alternate infinite;
 }
 #habilidades #ts{
-    animation: tecnologias3 3s alternate-reverse infinite;
+    animation:  3s alternate-reverse infinite;
 }
 #habilidades #bootstrap{
-    animation: tecnologias1 7s alternate-reverse infinite;
+    animation:  7s alternate-reverse infinite;
 }
 #habilidades #git{
-    animation: tecnologias2 7s alternate infinite;
+    animation:  7s alternate infinite;
 }
+*/
 #habilidades .tecnologias img{
-    width: 100%;
+    width: 8%;
     height: 100%;
+}
+#habilidades .meter{
+    width: 82%;
+    height: 10px;
+    color: var(--color0);
+    border-radius: 30px;
+    background-color: var(--color4);
+}
+#habilidades .meter div{
+    width: 82%;
+    height: 100%;
+    color: var(--color0);
+    border-radius: 30px;
+    background-color: var(--color2);
+}
+#habilidades .meter #meterJS{
+    width: 50%;
+}
+#habilidades .meter #meterHTML{
+    width: 75%;
+}
+#habilidades .meter #meterCSS{
+    width: 80%;
+}
+#habilidades .meter #meterJSON{
+    width: 60%;
+}
+#habilidades .meter #meterTS{
+    width: 20%;
+}
+#habilidades .meter #meterBOOTSTRAP{
+    width: 50%;
+}
+#habilidades .meter #meterGIT{
+    width: 40%;
 }
 #habilidades .tecnologias p{
     cursor: default;
+    width: 10%;
 }
 /*EDUCACIÓN*/
 #educacion{
