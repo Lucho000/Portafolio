@@ -404,7 +404,7 @@ ul{
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
 }
 /*
 #habilidades #js{
@@ -432,6 +432,11 @@ ul{
 #habilidades .tecnologias img{
     width: 8%;
     height: 100%;
+    transition: all.30s;
+}
+#habilidades .tecnologias img:hover{
+    transform: scale(1.2);
+    transition: all.30s;
 }
 .meter{
     height: 10px;
@@ -446,7 +451,6 @@ ul{
     width: 40%;
 }
 #habilidades .meter div{
-    width: 82%;
     height: 100%;
     color: var(--color0);
     border-radius: 30px;
@@ -484,29 +488,132 @@ ul{
     width: 25%;
 }
 #habilidades .meter #meter1{
-    width: 50%;
-}
-#habilidades .meter #meter2{
-    width: 75%;
-}
-#habilidades .meter #meter3{
     width: 80%;
 }
+#habilidades .meter #meter2{
+    width: 95%;
+}
+#habilidades .meter #meter3{
+    width: 90%;
+}
 #habilidades .meter #meter4{
-    width: 60%;
+    width: 75%;
 }
 #habilidades .meter #meter5{
-    width: 20%;
+    width: 85%;
 }
 #habilidades .meter #meter6{
-    width: 50%;
+    width: 90%;
 }
 #habilidades .meter #meter7{
-    width: 40%;
+    width: 100%;
 }
 /*EDUCACIÓN*/
 #educacion{
     background-color: var(--color4);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+#educacion .tarjetaEducacion h3{
+    color: var(--color2);
+    font-size: 1vw;
+}
+#educacion .tarjetaEducacion{
+    cursor: default;
+    width: 10vw;
+    height: 18vw;
+    padding: 5px;
+    font-size: 0.7vw;
+    text-align: center;
+    color: var(--color6);
+    box-shadow: 0 0 30px var(--color5);
+    opacity: 0.7;
+    transition: all.30s;
+}
+#educacion .tarjetaEducacion:hover{
+    transform: scale(1.2);
+    opacity: 1;
+    box-shadow: 0 0 30px var(--color2);
+    transition: all.30s;
+}
+#educacion #secundario{
+    background-image: url('img/gralRico.jpg');
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+#educacion #instituto{
+    background-image: url('img/superArte.png');
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+#educacion #universidad{
+    background-image: url('img/unq.jpg');
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+#educacion #cursos ul{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+}
+#educacion #cursos ul li a{
+    text-decoration: none;
+    color: var(--color6);
+    transition: all.30s;
+}
+#educacion #cursos ul li a:hover{
+    text-decoration: underline dashed;
+    color: var(--color2);
+    transition: all.30s;
+}
+#educacion #idiomas{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+}
+#educacion #idiomas p{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 5vw;
+    height: 5vw;
+    border-radius: 100%;
+    border: 1px solid var(--color2);
+    transition: all.30s;
+}
+#educacion #idiomas p:hover{
+    transform: scale(0.9);
+    border-radius: 30%;
+    transition: all.30s;
+}
+#en:hover::after{
+    color: var(--color2);
+    content: 'Basic';
+}
+#port:hover::after{
+    color: var(--color2);
+    content: 'Basic';
+}
+#es:hover::after{
+    color: var(--color2);
+    content: 'Native';
 }
 /*EXPERIENCIA*/
 #experiencia{
