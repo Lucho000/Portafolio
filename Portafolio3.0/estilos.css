@@ -195,6 +195,7 @@ header #tarjetaPresentacion cite{
     padding: 5% 15%;
     height: 37vw;
     width: 100%;
+    overflow-y: scroll;
 }
 .seccion h2{
     cursor: default;
@@ -203,6 +204,17 @@ header #tarjetaPresentacion cite{
     text-align: center;
     color: var(--color3);
     font-size: 2.5vw;
+}
+.seccion::-webkit-scrollbar{
+    width: 7px;
+    background-color: var(--color0);
+}
+.seccion::-webkit-scrollbar-track{
+    margin: 100px;
+}
+.seccion::-webkit-scrollbar-thumb{
+    border-radius: 30px;
+    background-color: var(--color2);
 }
 /*SOBRE MÍ*/
 #sobreMi{
@@ -312,6 +324,7 @@ ul{
     cursor: pointer;
     width: 11vw;
     height: 11vw;
+    font-size: 1.5vw;
     color: var(--color4);
     display: flex;
     justify-content: center;
@@ -591,27 +604,6 @@ ul{
     color: var(--color2);
     content: 'Native';
 }
-/*EXPERIENCIA*/
-#experiencia{
-    background-color: var(--color1);
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-}
-#experiencia .tarjetaExperiencia{
-    width: 20vw;
-    height: 8vw;
-    box-shadow: 0 0 30px var(--color5);
-    transition: all.30s;
-}
-#experiencia .tarjetaExperiencia:hover{
-    transform: scale(1.1);
-    box-shadow: 0 0 30px var(--color2);
-    transition: all.30s;
-}
 /*CONTACTO*/
 #contacto{
     background-color: var(--color4);
@@ -620,6 +612,7 @@ ul{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    background-color: var(--color1);
     background-image: url('img/contact.png');
     background-size: cover;
     background-repeat: none;
@@ -648,7 +641,7 @@ ul{
     border: none;
     outline: none;
     color: var(--color3);
-    background-color: var(--color1);
+    background-color: var(--color4);
     transition: all.30s;
 }
 #contacto form input:focus, #contacto form textarea:focus{
@@ -677,7 +670,7 @@ ul{
     font-size: 1.1vw;
     border-radius: 10px;
     color: var(--color3);
-    background-color: var(--color1);
+    background-color: var(--color4);
     transition: all.30s;
 }
 #contacto form #botonesForm button:hover{
