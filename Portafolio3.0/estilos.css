@@ -95,26 +95,34 @@ h1, h2, h3{
     justify-content: flex-end;
 }
 #idiomas{
-    padding: 1vw;
     cursor: default;
+    display: flex;
+    gap: 10px
 }
-#idiomas button{
+#idiomas a{
     cursor: pointer;
     width: 1.5vw;
     height: 1.5vw;
     border: none;
     outline: none;
     box-shadow: 0 0 5px var(--color5);
-    border-radius: 100%;
+    border-radius: 50%;
     transition: all.10s;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
-#idiomas button:hover{
+#idiomas a:hover{
     transform: scale(1.2);
     transition: all.10s;
 }
-#idiomas button img{
-    width: 100%;
-    height: 100%;
+#idioma #ingles{
+    background-image: url('img/ee.uu.png');
+}
+#idioma #portugues{
+    background-image: url('img/brasil.png');
+}
+#idioma #español{
+    background-image: url('img/argentina.png');
 }
 /*ENCABEZADO*/
 header{
